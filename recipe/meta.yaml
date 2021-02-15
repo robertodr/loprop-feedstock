@@ -1,5 +1,5 @@
 {% set name = "LoProp" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bd573b3b5e524dd65c1c79e6e69acde388c60eb162db4e11e169885f337f4b70
+  sha256: 043cfd474c4843c5664cd4b4a689f6fc46195b276185e6ae92365db93926a80f
 
 build:
   number: 0
