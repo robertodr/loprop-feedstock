@@ -14,7 +14,7 @@ build:
   noarch: python
   entry_points:
     - loprop=loprop.__main__:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install .[dalton,vlx] -vv
 
 requirements:
   host:
@@ -22,6 +22,9 @@ requirements:
     - pip
   run:
     - blocked-matrix-utils
+    - daltools
+    - h5py
+    - numpy
     - python >=3.6
 
 test:
@@ -40,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - vahtras
+    - robertodr
